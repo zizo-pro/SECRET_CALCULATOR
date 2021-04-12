@@ -7,6 +7,7 @@ from os import path
 from sys import argv , exit
 from dataconv import Ui_Form
 from discount import Ui
+from area import area
 FORM_CLASS,_=loadUiType(path.join(path.dirname(__file__),"SECRET_CALC.ui"))
 
 class mainapp(QMainWindow,FORM_CLASS):
@@ -92,6 +93,12 @@ class mainapp(QMainWindow,FORM_CLASS):
         self.window3.show()
         window.hide()
 
+    def area_window(self):
+        self.window4 = QtWidgets.QMainWindow()
+        self.ui1 = area()
+        self.ui1.setupUi(self.window4)
+        self.window4.show()
+        window.hide()
 
     def button_setup(self):
         self.norm_del.clicked.connect(self.delete)
@@ -115,10 +122,11 @@ class mainapp(QMainWindow,FORM_CLASS):
         self.norm_equal.clicked.connect(self.equal)
         self.data_conv.clicked.connect(self.dataconv_window)
         self.discount.clicked.connect(self.discount_window)
+        self.area.clicked.connect(self.area_window)
 
 if __name__ == "__main__":
     app = QApplication(argv)
     MainWindow = QtWidgets.QMainWindow()
     window = mainapp()
     window.show()
-    exit(app.exec())
+    app.exec()
