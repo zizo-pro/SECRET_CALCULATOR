@@ -15,7 +15,8 @@ class mainapp(QMainWindow,FORM_CLASS):
         QMainWindow.__init__(self)
         self.setupUi(self)
         self.button_setup()
-        self.data_conv.setIcon(QIcon("ziad.png"))
+        self.data_conv.setIcon(QIcon("/home/ziad/Desktop/SECRET_calc/icons/area.png"))
+        self.discount.setIcon(QIcon("/home/ziad/Desktop/SECRET_calc/icons/discount.png"))
 
     def no0 (self):
         self.lineEdit.setText(f"{self.lineEdit.text()}0")
@@ -90,7 +91,6 @@ class mainapp(QMainWindow,FORM_CLASS):
         self.ui1.setupUi(self.window3)
         self.window3.show()
         window.hide()
-
 
 
     def button_setup(self):
