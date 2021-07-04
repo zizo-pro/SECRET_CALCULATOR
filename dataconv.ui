@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>440</width>
+    <height>316</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <pointsize>17</pointsize>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QWidget" name="widget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>44</y>
+     <width>401</width>
+     <height>111</height>
+    </rect>
+   </property>
+   <widget class="QDoubleSpinBox" name="dataconv_covfrominput">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>40</y>
+      <width>231</width>
+      <height>41</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="dataconv_covfrombox">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>40</y>
+      <width>121</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <item>
+     <property name="text">
+      <string>bit</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>byte</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>kilobit</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>kilobyte</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>megabit</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>megabyte</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>gigabit</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>gigabyte</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>terabit</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>terabyte</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>10</y>
+      <width>151</width>
+      <height>19</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>16</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Convert From</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="comboBox_2">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>180</y>
+      <width>121</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <item>
+     <property name="text">
+      <string>bit</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>byte</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>kilobit</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>kilobyte</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>megabit</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>meagbyte</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>gigabit</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>gigabyte</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>terabit</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>terabyte</string>
+     </property>
+    </item>
+   </widget>
+  </widget>
+  <widget class="QWidget" name="widget_2" native="true">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>184</y>
+     <width>401</width>
+     <height>111</height>
+    </rect>
+   </property>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>10</y>
+      <width>151</width>
+      <height>19</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>16</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Convert To</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="dataconv_covtooutput">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>40</y>
+      <width>231</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(39, 42, 52);
+border-color: rgb(25, 26, 33);
+border: 1px solid rgb(25, 26, 33);</string>
+    </property>
+    <property name="text">
+     <string>0.00</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="dataconv_covtobox">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>40</y>
+      <width>121</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <item>
+     <property name="text">
+      <string>bit</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>byte</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>kilobit</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>kilobyte</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>megabit</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>megabyte</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>gigabit</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>gigabyte</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>terabit</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>terabyte</string>
+     </property>
+    </item>
+   </widget>
+  </widget>
+  <widget class="QPushButton" name="dataconv_convert">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>150</y>
+     <width>141</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Convert</string>
+   </property>
+   <property name="flat">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="dataconv_back">
+   <property name="geometry">
+    <rect>
+     <x>-40</x>
+     <y>0</y>
+     <width>131</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>30</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(112, 114, 118);</string>
+   </property>
+   <property name="text">
+    <string>←</string>
+   </property>
+   <property name="flat">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <zorder>widget_2</zorder>
+  <zorder>widget</zorder>
+  <zorder>dataconv_convert</zorder>
+  <zorder>dataconv_back</zorder>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
